@@ -3,9 +3,11 @@ body{
 }
 h1{
     color: pink;
+    font-size: 45px;
 }
 p{
     text-align: center;
+    font-size: 20px
     
 }
 strong{
