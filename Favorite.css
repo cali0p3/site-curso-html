@@ -28,3 +28,8 @@ nav a {
     text-decoration: none;
 
 }
+.favorite li {
+    display: inline-block;
+    text-align: center;
+    align-content: center;    
+}
