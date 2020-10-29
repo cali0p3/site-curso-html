@@ -1,0 +1,26 @@
+var audio, playbtn;
+
+function initAudioPlayer() {
+  audio = new Audio();
+  audio.src = "//www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3";
+  audio.loop = true;
+  audio.play();
+
+}
+window.addEventListener("load", initAudioPlayer);
+playbtn = document.querySelector('#play');
+mute = document.querySelector('#mute');
+
+playbtn.addEventListener('click', (e) => {
+  audio.paused ? audio.play() : audio.pause();
+  e.target.textContent = audio.paused ? 'Play' : 'Pause';
+})
+
+mute.addEventListener('click', (e) => {
+  audio.muted = !audio.muted;
+  e.target.textContent = audio.muted ? 'Unmute' : 'Mute';
+})
+<button type="button" id="play">Play</button>
+<button type="button" id="mute">Mute</button>
+
+///* https://pt.stackoverflow.com/questions/457623/mp3-n%c3%a3o-funciona-no-javasccript */
