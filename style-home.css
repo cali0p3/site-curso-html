@@ -1,0 +1,81 @@
+.principal {
+    background: #cccccc;
+    padding: 30px;
+}
+
+#banner {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 45px;
+}
+
+p {
+    text-align: center;
+    font-size: 20px
+    
+}
+strong {
+    color: #ffffff;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.Albuns {
+    font-style: italic;
+    font-size: 20px;
+}
+.Discos {
+    background-color: white;
+    padding: 20px;
+}
+
+.disc {
+
+}
+ol {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.favorite-link {
+    display: inline-block;
+    text-align: center;
+    align-content: center;   
+    background: #cccccc;
+    margin: 2% 5%;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+
+}
+
+a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+}
+
+a:hover {
+    color: purple;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+
+/*RGB(255, 255, 255)
+#FF0000
