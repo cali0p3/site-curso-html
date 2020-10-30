@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="caixa">
-            <h1><img src="flag.jpg"></h1>
+            <h1><img src="flag.jpg" alt="Logo do Pink Floyd"></h1>
 
             <nav>
             <ul>
@@ -24,15 +24,72 @@
     </header>
 </body>
 <main>
-    <forma>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
+    <form>
+        <label for="nome">*Nome:</label>
+        <input type="text" id="nome" class="input-padrao" required placeholder="Seu Nome">
 
-        <label for="e-mail">E-mail:</label>
-        <input type="text" id="e-mail">
+        <label for="e-mail">*E-mail:</label required>
+        <input type="email" id="e-mail" class="input-padrao" placeholder="seu.email@dominio.com">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea cols="70" rows="10" id="mensagem" class="input-padrao" placeholder="Digite aqui sua mensagem."></textarea>
+
+        <fieldset>
+            <legend>Qual o seu Album favorito do Pink Floyd?</legend>
+
+            <label for="1"><input type="radio" name="disco-fv" value="1" id="1">The Piper at the Gates of Dawn (1967)</label>
+            
+            <label for="2"><input type="radio" name="disco-fv" value="2" id="2">A Saucerful of Secrets (1968)</label>
+           
+            <label for="3"><input type="radio" name="disco-fv" value="3" id="3">More (1969)</label>
+           
+            <label for="4"><input type="radio" name="disco-fv" value="4" id="4">Ummagumma (1969)</label>      
+
+            <label for="5"><input type="radio" name="disco-fv" value="5" id="5">Atom Heart Mother (1970)</label>
+            
+            <label for="6"><input type="radio" name="disco-fv" value="6" id="6">Meddle (1971)</label>
+            
+            <label for="7"><input type="radio" name="disco-fv" value="7" id="7">Obscured by Clouds (1972)</label>
+            
+            <label for="8"><input type="radio" name="disco-fv" value="8" id="8">The Dark Side of the Moon (1973)</label>
+            
+            <label for="9"><input type="radio" name="disco-fv" value="9" id="9">Wish You Were Here (1975)</label>
+            
+            <label for="10"><input type="radio" name="disco-fv" value="10" id="10">Animals (1977)</label>
+            
+            <label for="11"><input type="radio" name="disco-fv" value="11" id="11">The Wall (1979)</label>
+            
+            <label for="12"><input type="radio" name="disco-fv" value="12" id="12">The Final Cut (1983)</label>
+            
+            <label for="13"><input type="radio" name="disco-fv" value="13" id="13">A Momentary Lapse of Reason (1987)</label>
+            
+            <label for="14"><input type="radio" name="disco-fv" value="14" id="14">The Division Bell (1994)</label>
+            
+            <label for="15"><input type="radio" name="disco-fv" value="15" id="15">The Endless River (2014)</label>
+            
+        </fieldset>
+
+        <fieldset>
+        <legend>Qual artista da banda é o seu preferido?</legend>
+            <select>
+                <option></option>
+                <option>Syd Barrett</option>
+                <option>Nick Mason</option>
+                <option>Roger Waters</option>
+                <option>Richard Wright</option>
+                <option>David Gilmour</option>
+                <option>Bob Klose</option>
+            </select>
+        </fieldset>
+
+        <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
 
         <input type="submit" value="Enviar Formulário">
-    </forma>
+
+       
+
+
+    </form>
 
 </main>
 
